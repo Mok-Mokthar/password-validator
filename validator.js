@@ -1,4 +1,4 @@
-export default function validator(pass) {
+export default function validator() {
     var passwordInput = document.getElementById('password').value;
 
     var messageContainer = document.getElementById('messageContainer');
@@ -14,7 +14,10 @@ export default function validator(pass) {
     title3.textContent = "";
     title4.textContent = "";
 
-    function handleClick() {
+    function handleClick(e) {
+        e.preventDefault();
+
+        console.log(passwordInput);
         // Test 1: Le mot de passe doit comporter au moins 8 caractères
         if (passwordInput.length < 8) {
             title.textContent = "Le mot de passe doit comporter au moins 8 caractères";
@@ -41,4 +44,5 @@ export default function validator(pass) {
         }
     }
     button.addEventListener("click", handleClick);
+
 }
