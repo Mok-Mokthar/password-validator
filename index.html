@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <form id="passwordForm">
+      <label for="password">Mot de passe :</label>
+      <input type="text" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+      <br>
+      <button type="button" id="button">OK</button>
+      <br>
+
+      <div id="messageContainer">
+        <p id="title">Le mot de passe doit comporter au moins 8 caractères</p>
+        <p id="title2">Le mot de passe doit contenir au moins 2 chiffres</p>
+        <p id="title3">Le mot de passe doit contenir au moins une lettre majuscule</p>
+        <p id="title4">Le mot de passe doit contenir au moins un caractère spécial</p>
+      </div>
+    </form>
+
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
